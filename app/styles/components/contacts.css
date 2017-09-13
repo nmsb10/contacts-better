@@ -1,0 +1,182 @@
+html{
+	font-size:16px;
+	color: rgba(77, 53, 77, 1);
+	font-family: "Helvetica", 'Helvetica Neue', Arial, sans-serif;
+}
+
+.whole-app{
+	width: 95%;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	background: rgb(252, 252, 252);
+	border: 0.1rem solid rgba(172, 151, 172, 0.3);
+	border-radius: 0.35rem;
+}
+
+.main-header h1{
+	text-align: center;
+	margin:0;
+	font-size: 1.75rem;
+	background: rgb(235, 235, 235);
+	padding: 0.625rem;
+}
+
+.whole-app .header-secondary{
+	margin: 0;
+	padding: 0.35rem 0 0.35rem 0.3rem;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	background: rgb(243, 243, 243);
+	border-top: 0.075rem solid rgba(172, 151, 172, 0.3);
+	border-bottom: 0.075rem solid rgba(172, 151, 172, 0.3);
+}
+
+.contacts-ul{
+	list-style-type: none;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.contacts-ul li{
+	/*need position relative so contact img and info summary may be positioned*/
+	position: relative;
+	padding: 1.375rem 0;
+	-webkit-transition: all 0.3s ease 0s; /* For Safari 3.1 to 6.0 */
+	-moz-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.contacts-ul li:nth-child(2n){
+	background-color: rgb(249, 247, 249);
+}
+
+.contacts-ul li:hover{
+	background-color: rgba(135, 135, 135, 0.85);
+	color:white;
+}
+
+.contacts-ul .contact-name{
+	font-size: 1.85rem;
+}
+
+.contacts-ul .contact-company{
+	font-size: 1.25rem;
+}
+
+.contacts-ul .small-contact-img{
+	width: 3.5rem;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	margin: 1rem;
+	margin-top: -1.75rem;
+}
+
+.contacts-ul .contact-summary-info{
+	display: inline-block;
+	position: relative;
+	/*5.5rem because small-contact-img is 3.5rem wide with 1rem margins*/
+	left: 5.5rem;
+}
+
+.contacts-ul .contact-summary-info .name-company{
+	display: inline-block;
+}
+
+.contacts-ul .contact-summary-info h2, h3{
+	margin: 0;
+}
+
+
+.contacts-ul .favorite-star-img{
+	width: 1.5rem;
+	vertical-align:top;
+	margin-right:0.25rem;
+}
+
+/*need to specify these because other contacts does not have the star image on the left of the name + company*/
+.contacts-ul .name-company-other-contact{
+	position: relative;
+	/*1.75rem because the favorite-star-img has width 1.5rem and margin-right 0.25rem*/
+    left: 1.75rem;
+}
+
+.retrieving-contacts{
+	color:purple;
+	-webkit-animation: retrieving 1.5s linear 0s infinite; /* Safari and Chrome */
+    -moz-animation: retrieving 1.5s linear 0s infinite; /* Firefox */
+    -ms-animation: retrieving 1.5s linear 0s infinite; /* Internet Explorer */
+    -o-animation: retrieving 1.5s linear 0s infinite; /* Opera */
+    animation: retrieving 1.5s linear 0s infinite;
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes retrieving {
+    50% {color:lime;}
+}
+
+/* Firefox */
+@-moz-keyframes retrieving {
+	50% {color:lime;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes retrieving {
+	50% {color:lime;}
+}
+
+/* Opera */
+@-o-keyframes retrieving {
+    50% {color:lime;}
+}
+
+@keyframes retrieving {
+	50% {color:lime;}
+}
+
+.displayAllContacts{
+	cursor: pointer;
+}
+
+.font-awesome{
+	margin-right: 0.25rem;
+}
+
+.hidden{
+	display:none;
+	margin:0;
+}
+
+/*@media screen and (max-width:480px) and (orientation:landscape OR portrait){
+}*/
+
+@media screen and (max-width:480px){
+	html {
+		font-size:10px;
+		color: rgb(35, 25, 35);
+	}
+
+	.whole-app{
+		width: 100%;
+		margin: 0;
+		border:none;
+	}
+
+	.one-contact .contact-main-info .primary-image{
+		width: 11rem;
+		margin: 0;
+	}
+
+	.one-contact .contact-main-info{
+		text-align:center;
+	}
+
+	.one-contact .contact-main-info .detail-name-company{
+		display: block;
+		height: auto;
+		vertical-align: auto;
+		margin:0;
+	}
+}

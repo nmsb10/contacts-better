@@ -1,0 +1,101 @@
+.one-contact{
+	/*so can position header contents appropriately*/
+	position:relative;
+}
+
+.one-contact header{
+	background: rgb(235, 235, 235);
+	padding: 0.625rem 0;
+}
+
+.one-contact .see-all-contacts{
+	cursor: pointer;
+	/*display inline block so star shows on same "line"*/
+	display:inline-block;
+	margin: 0;
+	/*due to star being 2.5rem and having margin of 0.3rem*/
+	height: 3.1rem;
+	line-height: 3.1rem;
+	margin-left: 0.3rem;
+	-webkit-transition: all 0.25s ease 0s; /* For Safari 3.1 to 6.0 */
+	-moz-transition: all 0.25s ease 0s;
+	transition: all 0.25s ease 0s;
+}
+
+.one-contact .see-all-contacts:hover{
+	color: black;
+}
+
+.one-contact .favorite-button{
+	cursor: pointer;
+	width: 2.5rem;
+	margin: 0.3rem;
+	position: absolute;
+	right: 0;
+	-webkit-transition: all 0.25s ease 0s; /* For Safari 3.1 to 6.0 */
+	-moz-transition: all 0.25s ease 0s;
+	transition: all 0.25s ease 0s;
+}
+
+.one-contact .favorite-button:hover{
+	box-shadow: 0 0 5px 2px rgba(82, 195, 29, 0.7);
+}
+
+.one-contact .favorite-button:active{
+	box-shadow: 0 0 8px 3px rgba(127, 0, 127,0.7);
+}
+
+.one-contact .contact-main-info{
+	
+}
+
+.one-contact .contact-main-info .primary-image{
+	width: 12rem;
+	margin: 1rem 1.125rem;
+}
+
+.one-contact .contact-main-info .detail-name-company{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1.125rem;
+}
+
+.one-contact .contact-main-info .detail-name-company h1{
+	font-size:2.25rem;
+}
+
+.one-contact .contact-main-info .detail-name-company span{
+	font-size:1.75rem;
+}
+
+.one-contact .detail-info{
+	width:95%;
+	margin: 0.75rem auto;
+	border-bottom: 0.075rem solid rgba(172, 151, 172, 0.3);
+}
+
+.one-contact .detail-info h2{
+	font-size: 1.25rem;
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.one-contact .detail-info p{
+	font-size: 1.625rem;
+}
+
+.one-contact .detail-info h2, p{
+	margin: 0.5rem 0;
+}
+
+.one-contact .detail-info .phone-div{
+	position: relative;
+}
+
+.one-contact .detail-info .phone-div h3{
+	margin: 0;
+    position: absolute;
+    top: 0.25rem;
+    right: 1.5rem;
+    font-size: 1.25rem;
+	color: rgba(0, 0, 0, 0.35);
+}
